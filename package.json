@@ -1,0 +1,37 @@
+{
+  "name": "noeulsetting",
+  "version": "0.1.0",
+  "description": "Discord Server Manage App for Noeul-Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron .",
+    "build": "build --win --x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMHStudio/Discord_Noeul_Setting.git"
+  },
+  "author": "PMH Studio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PMHStudio/Discord_Noeul_Setting/issues"
+  },
+  "homepage": "https://github.com/PMHStudio/Discord_Noeul_Setting#readme",
+  "dependencies": {
+    "superagent": "^5.0.5"
+  },
+  "devDependencies": {
+    "electron": "^5.0.1"
+  },
+  "build": {
+    "appId": "kr.kro.pmhstudio.noeulsetting",
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "publisherName": "PMH Studio"
+    }
+  }
+}
